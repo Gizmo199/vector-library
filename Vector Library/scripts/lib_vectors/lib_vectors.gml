@@ -177,6 +177,10 @@ function vec2() constructor
 			{
 				return new vec2(abs(x),abs(y));
 			}
+			static vec_floor = function()
+			{
+				return new vec2(floor(x),floor(y));
+			}
 			static vec_ceil = function()
 			{
 				return new vec2(ceil(x),ceil(y));	
@@ -428,6 +432,10 @@ function vec3() constructor
 			static vec_abs = function()
 			{
 				return new vec3(abs(x),abs(y),abs(z));
+			}
+			static vec_floor = function()
+			{
+				return new vec3(floor(x),floor(y),floor(z));
 			}
 			static vec_ceil = function()
 			{
