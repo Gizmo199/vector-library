@@ -51,3 +51,21 @@ Both vectors contain:
 
 Vec3's have an added function called 'Cross()' which returns the cross product of 2 vector 3s
 
+## Chained Functions
+Functions can be chained together like so:
+```
+my_vec = new vec3(1);
+my_vec.add(1).multiply(2);
+```
+This will make the vector *my_vec* equal x=4, y=4, z=4 because:
+```
+.add(1) = 1+1, 1+1, 1+1 = ( x=2, y=2, z=2 )
+.multiply(2) = 2*2, 2*2, 2*2 = ( x=4, y=4, z=4 )
+```
+
+**NOTE** some functions will not return vectors, and therefore end the chain such as:
+```
+my_vec = new vec3(1);
+var len = my_vec.add(1).multiply(2).length()
+```
+This would set the 'len' value to the return value of *vec3.length* which is a single number and not a vec3!
