@@ -1,9 +1,9 @@
 var s = 32;
-var zs = min(position.z/s, 0);
+var zs = min(position.z/s*4, 0);
 
 // Draw our shadow
 draw_set_alpha(.5);
-draw_ellipse_color(x-s-zs, y+s-s*.5-zs, x+s+zs, y+s+s*.5+zs, 0, 0, 0);
+draw_ellipse_color(x-s-zs, y+s-s*.5-zs*.5, x+s+zs, y+s+s*.5+zs*.5, 0, 0, 0);
 draw_set_alpha(1);
 
 // Draw our ball
