@@ -99,7 +99,7 @@ function vec2() constructor
 			static normalize = function()
 			{
 				///@func normalize()
-				var mag = length_squared();
+				var mag = length();
 				if ( mag == 0 ) {
 					x=0; y=0;
 				}
@@ -339,7 +339,7 @@ function vec3() constructor
 			static normalize = function()
 			{
 				///@func normalize()
-				var mag = length_squared();
+				var mag = length();
 				if ( mag == 0 ) {
 					x=0; y=0; z=0;
 				}
